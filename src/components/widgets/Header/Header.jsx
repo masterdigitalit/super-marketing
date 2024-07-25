@@ -41,7 +41,7 @@ export default function Header() {
 					div.classList.add(style.showed);
 				}
 			}
-			console.log(dY)
+
 			oldScrollY = scrolled;
 		};
 	}

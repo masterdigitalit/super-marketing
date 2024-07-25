@@ -5,6 +5,9 @@ import { About } from "./config";
 export default function AboutPage() {
 	return (
 		<div className={style.about} >
+				<div className={style.point}>
+		<div className={style.bool}></div>
+	</div>
 			<div className={style.title}>О компании</div>
 			<div className={style.conteiner}>
 

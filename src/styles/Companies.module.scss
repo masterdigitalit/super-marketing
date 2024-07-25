@@ -2,16 +2,35 @@
 	.companies {
 		display: flex;
 		width: 100%;
-		padding: 0px 100px;
+
 		flex-wrap: wrap;
 		margin-bottom: 100px;
+		position: relative;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 39px);
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.title {
 			width: 100%;
 			font-size: 34px;
 			font-weight: 600;
 
-			padding-top: 5%;
+
 			padding-bottom: 2%;
 		}
 
@@ -97,8 +116,29 @@
 	.companies {
 		display: flex;
 		width: 100%;
-		padding: 0px 20px;
+		padding: 0px 0px;
 		flex-wrap: wrap;
+		position: relative;
+		margin-bottom: 50px;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 18px);
+;
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.title {
 			width: 100%;

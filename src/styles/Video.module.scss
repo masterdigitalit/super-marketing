@@ -1,0 +1,378 @@
+@media (min-width: 1000px) {
+	.video{
+	width: 100%;
+
+	margin-top: 100px;
+	display: flex;
+
+	.line{
+		width: 4px;
+		background-color: #fff;
+		position: relative;
+		left: 5px;
+		margin-left: 16px;
+
+		height: initial;
+	}
+	.items{
+		row-gap: 60px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	.container-1{
+		display: flex;
+
+    justify-content: space-between;
+		.infoAboutVideo{
+			display: flex;
+			width: auto;
+			flex-wrap: wrap;
+			align-items: center;
+			align-content: flex-start;
+			padding-top: 20px;
+			padding-right: 10vw;
+			.title{
+				font-size: 22px;
+				font-weight: 600;
+				margin-bottom: 50px;
+
+			}
+			.description{
+				font-size: 18px;
+
+			}
+		}
+		.videoComponent{
+		width: min-content;
+		display: flex;
+		position: relative;
+		svg{
+			width: 280px;
+			height: 280px;
+		}
+		>.videoWindow{
+			padding: 20px;
+			width: 280px;
+			height: 280px;
+			position: absolute;
+			object-fit: cover;
+			margin: 0;
+			left: 0%;
+			.close{
+				display: none;
+			}
+		video{
+	
+			border-radius: 50%;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		
+
+		}
+	}
+
+		.hoverComponent{
+			padding: 20px;
+	
+			position: absolute;
+			left: 0%;
+
+			.info{
+				opacity: 0;
+				border-radius: 50%;
+				width: 240px;
+				height: 240px;
+				transition: 1s ease-in-out;
+				background-color: rgba(233, 232, 232, 0.9803921569);
+				display: flex;
+				align-content: center;
+				justify-content: flex-end;
+				align-items: center;
+				flex-wrap: nowrap;
+				flex-direction: row;
+				text-align: center;
+				color: #000;
+				font-size: 16px;
+			}
+		
+			
+		}
+		
+
+	}	
+	// :hover .hoverComponent{
+	// 	.info{
+	// 		transition: 1s ease-in-out;
+	// 		opacity: 1;
+	// 	}
+	// }
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 39px);
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+}
+.videoWindow-active{
+	border-radius: 10px;
+	object-fit: cover;
+	padding: 0;
+	top: 70px;
+	left: 0;
+	z-index: 10000;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	max-height: calc(100vh - 70px);
+	max-width: 100vw;
+	padding: 40px;
+	justify-content: center;
+	background-color: rgb(98 96 96 / 98%);
+	height: calc(100vh - 70px);
+	.close{
+		width: 70px;
+		left: 50px;
+		height: 70px;
+		position: absolute;
+		transform: rotate(90deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			width: 40px;
+			height: 40px;
+		}
+	}
+	>video{
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+	
+
+
+
+	}
+}
+}
+@media (min-width: 320px) and (max-width: 540px) {
+	.video{
+		width: 100%;
+	
+		margin-top: 100px;
+		display: flex;
+	
+		.line{
+			width: 4px;
+			background-color: #fff;
+			position: relative;
+			left: 5px;
+			margin-left: 16px;
+	
+			height: initial;
+		}
+		.items{
+			row-gap: 60px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		.container-1{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			align-content: center;
+			align-items: center;
+	
+			justify-content: space-between;
+			.infoAboutVideo{
+				width: 100%;
+				display: flex;
+				width: auto;
+				flex-wrap: wrap;
+				align-items: center;
+				align-content: flex-start;
+
+				.title{
+					width: 100%;
+					font-size: 22px;
+					font-weight: 600;
+					margin-bottom: 50px;
+					display: flex;
+					text-align: center;
+					flex-direction: column;
+					align-items: center;
+	
+	
+				}
+				.description{
+					width: 100%;
+					font-size: 18px;
+					display: flex;
+					text-align: center;
+	
+				}
+			}
+			.videoComponent{
+				position: relative;
+				width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+			svg{
+				width: calc(100vw - 55px);
+				height: calc(100vw - 55px);
+				g{
+					circle{
+						stroke-dasharray: 0;
+						cx:calc((100vw - 55px) / 2);
+						cy:calc((100vw - 55px) / 2);
+						r:calc((100vw - 85px) / 2);
+					}
+				}
+			}
+			>.videoWindow{
+				
+				width: calc(100vw - 55px);
+				height: calc(100vw - 55px);
+				position: absolute;
+				object-fit: cover;
+				margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+	
+				.close{
+					display: none;
+				}
+			video{
+		
+				border-radius: 50%;
+				object-fit: cover;
+				width: calc(100vw - 105px);
+				height: calc(100vw - 105px);
+			
+	
+			}
+		}
+	
+			.hoverComponent{
+				padding: 20px;
+		
+				position: absolute;
+				
+	
+				.info{
+					opacity: 0;
+					border-radius: 50%;
+					width: calc(100vw - 105px);
+					height: calc(100vw - 105px);
+					transition: 1s ease-in-out;
+					background-color: rgba(233, 232, 232, 0.9803921569);
+					display: flex;
+					align-content: center;
+					justify-content: flex-end;
+					align-items: center;
+					flex-wrap: nowrap;
+					flex-direction: row;
+					text-align: center;
+					color: #000;
+					font-size: 16px;
+				}
+			
+				
+			}
+			
+	
+		}	
+		// :hover .hoverComponent{
+		// 	.info{
+		// 		transition: 1s ease-in-out;
+		// 		opacity: 1;
+		// 	}
+		// }
+			.point{
+				position: absolute;
+				top: calc(50% - 20px);
+        left: calc(100% + 18px);
+
+				height: 40px;
+				width: 6px;
+				background-color: #000000;
+				z-index: 100;
+				.bool{
+					position: absolute;
+					width: 10px;
+					left: -3px;
+					height: 10px;
+					top: 15px;
+					background-color: #fb0ad7;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	
+	}
+	.videoWindow-active{
+		object-fit: cover;
+		padding: 0;
+		top: 50px;
+		left: 0;
+		z-index: 10000;
+		position: fixed;
+		width: 100%;
+		display: flex;
+
+		max-height: calc(100vh - 50px);
+		max-width: 100vw;
+
+		justify-content: center;
+		background-color: rgb(98 96 96 / 98%);
+		height: calc(100vh - 50px);
+		padding: 10px;
+		.close{
+			width: 40px;
+			left: 15px;
+			top: 15px;
+			height: 40px;
+			position: absolute;
+			transform: rotate(90deg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 1000;
+			img{
+				width: 30px;
+				height: 30px;
+				z-index: 1000;
+			}
+		}
+		>video{
+			max-width: 100%;
+			max-height: 100%;
+			width: auto;
+			height: auto;
+			border-radius: 5px;
+		
+	
+	
+	
+		}
+}
+}

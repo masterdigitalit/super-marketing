@@ -1,7 +1,25 @@
 @media (min-width: 1000px) {
 	.news {
-		padding: 60px 100px;
+		padding: 60px 00px;
 		padding-bottom: 0;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 39px);
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.title {
 			font-size: 24px;
@@ -267,8 +285,28 @@
 	.news {
 	
 		position: relative;
-		margin-top: 150px;
-		padding: 00px 20px 0px 20px;
+		margin-bottom: 50px;
+		padding: 0px;
+
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 18px);
+;
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.title {
 			font-size: 26px;

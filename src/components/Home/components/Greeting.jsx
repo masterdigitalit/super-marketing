@@ -4,6 +4,9 @@ import style from "../../../styles/Greeting.module.scss";
 export default function Greeting() {
 	return (
 		<div className={style.greeting}>
+							<div className={style.point}>
+		<div className={style.bool}></div>
+	</div>
 			<div className={style["container-1"]}>
 				<div className={style.icon}><img src={require('../../../images/person.png')} alt="" /></div>
 				<div className={style.circle}>Обсудить проект</div>

@@ -26,6 +26,9 @@ export default function Contacts() {
 	}, [List]);
 	return (
 		<div className={style.contacts}>
+							<div className={style.point}>
+		<div className={style.bool}></div>
+	</div>
 			<div className={style.container}>
 				<div
 					className={style.title}

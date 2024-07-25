@@ -2,10 +2,31 @@ $main-color:#a60f6c;
 
 @media (min-width: 1000px) {
 	.greeting {
-		padding: 0px 100px;
+		width: 100%;
+		position: relative;
+		margin-bottom: 100px;
+
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 39px);
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.container-1 {
 			display: flex;
@@ -231,13 +252,33 @@ $main-color:#a60f6c;
 
 @media (min-width: 320px) and (max-width: 540px) {
 	.greeting {
+		position: relative;
 
-		padding: 0px 20px;
-		margin-bottom: 10%;
+		padding: 0px 0px;
+		margin-bottom: 50px;
 		display: flex;
 		justify-content: center;
 		align-content: center;
 		align-items: flex-end;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 18px);
+;
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.container-1 {
 			display: flex;

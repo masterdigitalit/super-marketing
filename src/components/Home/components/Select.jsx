@@ -5,6 +5,9 @@ import style from '../../../styles/WhyWe.module.scss'
 export default function Select() {
 	return (
 		<div className={style.container}>
+							<div className={style.point}>
+		<div className={style.bool}></div>
+	</div>
 			<div className={style.title}>Почему выбирают нас ?</div>
 
 				<ul>

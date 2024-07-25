@@ -1,0 +1,40 @@
+@media (min-width: 1000px) {
+.home{
+	display: flex;
+	padding: 100px;
+	width: 100%;
+	.components{
+width: calc(100% -  4px);
+}
+.line{
+	width: 4px;
+	background-color: #fff;
+	position: relative;
+	left: 40px;
+	border-radius: 5px;
+
+
+	height: initial;
+}
+}
+}
+@media (min-width: 320px) and (max-width: 540px) {
+	.home{
+		display: flex;
+		padding:0px 25px 0 15px;
+		width: 100%;
+		.components{
+	width: calc(100% -  4px);
+	}
+	.line{
+		width: 4px;
+		background-color: #fff;
+		position: relative;
+		left: 20px;
+		border-radius: 5px;
+	
+	
+		height: initial;
+	}
+	}
+}

@@ -593,6 +593,7 @@
 		.bar {
 			display: none;
 			animation: closebar 1s;
+			transition: 1s ease-in-out;
 			@keyframes closebar {
 
 				from {

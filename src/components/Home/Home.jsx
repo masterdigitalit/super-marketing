@@ -7,7 +7,8 @@ import Greeting from "./components/Greeting";
 import Blog from "./components/Blog";
 import { useLocation } from 'react-router-dom'
 import Select from "./components/Select";
-
+import Video from "./components/Video";
+import style from '../../styles/Home.module.scss'
 
 export default function Home() {
 	const location = useLocation()
@@ -35,6 +36,8 @@ export default function Home() {
 	
 	return (
 		<>
+		<div className={style.home}>
+		<div className={style.components}>
 
 
 		 <section><Greeting/></section>
@@ -45,14 +48,16 @@ export default function Home() {
 			<section  id="services">	<Block /></section>
 
 			<section>	<Select/></section>
+			<Video/>
 		
 
 
 			<section id="about">	<AboutPage /></section>
 			
 			<section id="contacts">	<Contacts/></section> 
-
-
+			</div>
+			<div className={style.line}></div>
+			</div>
 		</>
 	);
 }

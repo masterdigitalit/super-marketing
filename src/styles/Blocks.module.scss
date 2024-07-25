@@ -1,17 +1,35 @@
 @media (min-width: 1000px) {
 	.blocks {
-		padding: 0px 100px;
+
 		position: relative;
-		top: 100px;
-		margin-bottom: 150px;
+
+		margin-bottom: 100px;
 		width: 100%;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 39px);
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.title {
 			width: 100%;
 			font-size: 32px;
 			font-weight: 600;
 			padding-left: 10px;
-			padding-top: 5%;
+	
 			padding-bottom: 2%;
 		}
 
@@ -161,8 +179,27 @@
 @media (min-width: 320px) and (max-width: 540px) {
 	.blocks {
 		position: relative;
-		top: 100px;
-		padding: 0px 20px;
+		margin-bottom: 50px;
+		padding: 0px 0px;
+		.point{
+			position: absolute;
+			top: calc(50% - 20px);
+			left: calc(100% + 18px);
+;
+			height: 40px;
+			width: 6px;
+			background-color: #000000;
+			z-index: 100;
+			.bool{
+				position: absolute;
+				width: 10px;
+				left: -3px;
+				height: 10px;
+				top: 15px;
+				background-color: #fb0ad7;
+				border-radius: 50%;
+			}
+		}
 
 		.title {
 			width: 100%;

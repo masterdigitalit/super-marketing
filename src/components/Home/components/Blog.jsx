@@ -34,20 +34,23 @@ export default function Blog() {
 
 	return (
 	<div className={style.blog} >
+						<div className={style.point}>
+		<div className={style.bool}></div>
+	</div>
 		<div className={style.title}>Преимущества на глаза</div>
 	
 		<div className={style.Container}>
 				
 			<div className={style.block}>
-				<img src={require("../../../images/work/1.jpg")} alt="фото" />
+				<img src={require("../../../images/work/1.jpg")} loading="lazy" alt="фото" />
 				<div className={style.text}>Весь функционал в телеграмме</div>
 			</div>
 			<div className={style.block}>
-				<img src={require("../../../images/work/2.jpg")} alt="фото" />
+				<img src={require("../../../images/work/2.jpg")} loading="lazy" alt="фото" />
 				<div className={style.text}>Легко отслеживать статистику за каждым продавцом</div>
 			</div>
 			<div className={style.block}>
-				<img src={require("../../../images/work/3.jpg")} alt="фото" />
+				<img src={require("../../../images/work/3.jpg")} loading="lazy" alt="фото" />
 				<div className={style.text}>бла бла бла не придумал</div>
 			</div>
 
