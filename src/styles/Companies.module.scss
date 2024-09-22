@@ -2,7 +2,7 @@
 	.companies {
 		display: flex;
 		width: 100%;
-
+		z-index: 10;
 		flex-wrap: wrap;
 		margin-bottom: 100px;
 		position: relative;
@@ -26,6 +26,7 @@
 		}
 
 		.title {
+	
 			width: 100%;
 			font-size: 34px;
 			font-weight: 600;

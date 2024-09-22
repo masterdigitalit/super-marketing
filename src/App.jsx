@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import Header from "./components/widgets/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/widgets/Footer/Footer";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Article from "./components/Articles/Article";
+import Test from "./components/Home/components/Test";
 
 function App() {
 	var link = document.createElement('meta');
@@ -22,6 +22,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />}></Route>
 				<Route path="/article/:id" element={<Article />}></Route>
+				<Route path="/test" element={<Test />}></Route>
 			</Routes> 
 			<Footer />
 		</>

@@ -6,7 +6,7 @@ import { Blocks } from "./config";
 
 export default function Block() {
 	return (
-		<div className={style.blocks}>
+		<div className={style.blocks}  >
 							<div className={style.point}>
 		<div className={style.bool}></div>
 	</div>

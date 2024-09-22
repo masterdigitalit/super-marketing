@@ -9,34 +9,36 @@ import { useLocation } from 'react-router-dom'
 import Select from "./components/Select";
 import Video from "./components/Video";
 import style from '../../styles/Home.module.scss'
+import Background from "./components/Background";
 
 export default function Home() {
 	const location = useLocation()
-	useEffect(() => {
-		if(location.hash !== ''){
-				document.getElementById(location.hash.slice(1)).scrollIntoView({
-			behavior: "smooth",
-		});
-		}
+	// useEffect(() => {
+	// 	if(location.hash !== ''){
+	// 			document.getElementById(location.hash.slice(1)).scrollIntoView({
+	// 		behavior: "smooth",
+	// 	});
+	// 	}
 	
-	}, [location.hash]);
+	// }, [location.hash]);
 
-	useEffect(() => {
+	// useEffect(() => {
 		
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-			anchor.addEventListener('click', function (e) {
-					e.preventDefault();
+	// 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	// 		anchor.addEventListener('click', function (e) {
+	// 				e.preventDefault();
 	
-					document.querySelector(this.getAttribute('href')).scrollIntoView({
-							behavior: 'smooth'
-					});
-			});
-	});
-	}, []);
+	// 				document.querySelector(this.getAttribute('href')).scrollIntoView({
+	// 						behavior: 'smooth'
+	// 				});
+	// 		});
+	// });
+	// }, []);
 	
 	return (
 		<>
 		<div className={style.home}>
+		{/* <Background/> */}
 		<div className={style.components}>
 
 
@@ -56,6 +58,7 @@ export default function Home() {
 			
 			<section id="contacts">	<Contacts/></section> 
 			</div>
+
 			<div className={style.line}></div>
 			</div>
 		</>

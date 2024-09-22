@@ -15,6 +15,9 @@ html{
 
 
 }
+h1,h2,h3,h4,img,svg, div{
+
+}
 @media (prefers-color-scheme: light) {
   body{
     overflow-x: hidden;
@@ -38,6 +41,10 @@ body{
   height: 100%;
   max-width: 100%;
 overflow-x: hidden;
+}
+section{
+  scroll-margin-top: 100px;
+
 }
 // ::-webkit-scrollbar-thumb {
 //   border: 5px solid transparent;

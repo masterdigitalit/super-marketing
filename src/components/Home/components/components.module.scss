@@ -648,3 +648,61 @@
 		}
 	}
 }
+
+
+.test{
+	display: flex;
+	margin-top: 100px;
+	position: relative;
+	.card{
+		width: 300px;
+		height: 500px;
+		background-color: #890505;
+		position: relative;
+	
+	.pre-card{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff00;			
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		.mini_card{
+			display: flex;
+			opacity: 1;
+			background-color: #fff;
+			transition: 1s ease-in-out;
+			
+		}
+		.mini_card.active{
+			opacity: 0;
+			transition: 1s ease-in-out;
+		}
+
+
+
+	}
+}
+
+
+
+.container{
+  display: inline-block;
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: 
+  typing 5s steps(20, end) infinite forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  0%, 100% { width: 0% }
+  45%, 55% { width: 100% }
+}
+}

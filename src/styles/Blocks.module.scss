@@ -1,9 +1,11 @@
 @media (min-width: 1000px) {
 	.blocks {
-
+		z-index: 10;
 		position: relative;
 
+
 		margin-bottom: 100px;
+		margin-top: 20px;
 		width: 100%;
 		.point{
 			position: absolute;

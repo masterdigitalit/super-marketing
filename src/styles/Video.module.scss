@@ -1,7 +1,7 @@
 @media (min-width: 1000px) {
 	.video{
 	width: 100%;
-
+	z-index: 10;
 	margin-top: 100px;
 	display: flex;
 
@@ -43,24 +43,48 @@
 			}
 		}
 		.videoComponent{
-		width: min-content;
-		display: flex;
-		position: relative;
+			width: min-content;
+			display: flex;
+			position: relative;
+			justify-content: center;
+			align-items: center;
 		svg{
-			width: 280px;
-			height: 280px;
+			width: calc(25vw - 40px);
+			height: calc(25vw - 40px);
+			g{
+				circle{
+					stroke-dashoffset: -22;
+				stroke-dasharray: calc((2 * 3.14 * (25vw - 50px) / 2) * 0.95), calc((2 * 3.14 * (25vw - 50px) / 2) * 0.05);
+					cx:calc((25vw - 40px) / 2);
+					cy:calc((25vw - 40px) / 2);
+					r:calc((25vw - 50px) / 2);
+				}
+			}
 		}
 		>.videoWindow{
-			padding: 20px;
-			width: 280px;
-			height: 280px;
+			
+			width: calc(25vw - 75px);
+			height: calc(25vw - 75px);
 			position: absolute;
 			object-fit: cover;
 			margin: 0;
-			left: 0%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
 			.close{
 				display: none;
 			}
+		video{
+	
+			border-radius: 50%;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		
+
+		}
+	
 		video{
 	
 			border-radius: 50%;

@@ -4,6 +4,20 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
 	const [bar, SetBar] = useState(false);
+	const [scroll, SetScroll] = useState(0);
+
+	window.addEventListener('scroll', scrollBar)
+	function scrollBar(){
+
+		let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    let scrolled = scroll / height ;
+
+		SetScroll(scrolled)
+	}
+	
 	useEffect(() => {
 		if (bar) {
 			document.querySelectorAll("." + style.bar)[0].classList.add(style.active);
@@ -200,6 +214,10 @@ export default function Header() {
 						<img src={require("../../../images/svgexport-9.svg").default} alt="" /> <div className={style.text}> связаться с нами</div>
 					</div>
 				</div>
+			</div>
+			<div className={style.scrollBar}>
+			<div className={style.line} style={{'width': scroll * 100 + '%'}}></div>
+
 			</div>
 		</div>
 	);
